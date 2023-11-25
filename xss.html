@@ -6,8 +6,7 @@ function xxx() {
     console.log('hello there!')
 }
 
-var w1 = window.open('https://random-slap.yactf.ru/pages/auth.html#callback=document.xxx')
-w1.document.xxx = xxx;
+var w1 = window.open('https://random-slap.yactf.ru/pages/auth.html#callback=xxx')
 
 // wait for window loaded
 setTimeout(() => {
